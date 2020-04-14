@@ -79,5 +79,23 @@ which is the one provided in the [PageRank](https://en.wikipedia.org/wiki/PageRa
 10,0.016170
 ```
 
+# Going Native 
+
+This example is suitable of executing on very large graphs. With the help of GraalVM we can also 
+compile down to a native executable which will speed up things. Assuming you have a proper installation 
+of GraalVM with Java 11 support and the native-image tool, you can issue the following command.
+
+```
+mvn package
+native-image -jar target/jgrapht-sparsegraph-example-1.4.0-SNAPSHOT.jar
+```
+
+An executable called `sparsegraph` will be created. The configuration for the native-tool is automatically 
+picked up from `src/main/resources/META-INF/native-image/example.jgrapht.sparsegraph/App/native-image.properties`. Execute the program using 
+
+```
+./sparsegraph input.json pagerank.csv
+```
+
 
 Enjoy!

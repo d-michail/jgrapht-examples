@@ -18,7 +18,7 @@ public class App {
 	public static void main(String[] args) throws IOException {
 
 		if (args.length < 2) {
-			System.out.println("Proper Usage is: java program inputfile outputfile");
+			System.out.println("Proper usage is: program inputfile outputfile");
 			System.exit(0);
 		}
 
