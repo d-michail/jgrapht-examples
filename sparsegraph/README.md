@@ -10,7 +10,6 @@ This sample shows a project which
 Note that sparse representations have the benefits of being very fast since they are cache-friendly and 
 have a small memory footprint. On the other hand they have the drawback of being static (cannot be 
 changed after they are created) and that vertices and edges have to be continuous integers. 
-
 Thus, this representation is suited for users which have very large static graphs and they want to 
 execute some complicated algorithm on them.
 
