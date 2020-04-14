@@ -45,14 +45,14 @@ public class App {
 		edges.clear();
 
 		final double dampingFactor = 0.85;
-		final int maxIterations = 10;
+		final int maxIterations = 20;
 
 		PageRank<Integer, Integer> alg = new PageRank<>(graph, dampingFactor, maxIterations);
 		Map<Integer, Double> pageRank = alg.getScores();
 
 		try (FileWriter writer = new FileWriter(output, false)) {
 			for (int i = 0; i < numVertices; i++) {
-				writer.append(String.format("%d,%f", i, pageRank.get(i)));
+				writer.append(String.format("%d,%f\n", i, pageRank.get(i)));
 			}
 		}
 
