@@ -79,11 +79,11 @@ which is the one provided in the [PageRank](https://en.wikipedia.org/wiki/PageRa
 10,0.016170
 ```
 
-# Going Native 
+## Going Native 
 
-This example is suitable of executing on very large graphs. With the help of GraalVM we can also 
+This example is suitable of executing on very large graphs. With the help of [GraalVM](https://www.graalvm.org/) we can also 
 compile down to a native executable which will speed up things. Assuming you have a proper installation 
-of GraalVM with Java 11 support and the native-image tool, you can issue the following command.
+of GraalVM with Java 11 support and the [native-image](https://www.graalvm.org/docs/reference-manual/native-image) tool, you can issue the following command.
 
 ```
 mvn package
