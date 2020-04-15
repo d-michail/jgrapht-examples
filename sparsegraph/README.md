@@ -17,7 +17,7 @@ The project can be executed like:
 
 ```
 mvn package
-java -jar target/jgrapht-sparsegraph-example-1.4.0-SNAPSHOT.jar input.json pagerank.csv
+java -jar target/jgrapht-sparsegraph-example-1.4.0.jar input.json pagerank.csv
 ```
 
 which will read the provided graph from file `input.json` and output a CSV file with `vertexid,pagerank`
@@ -87,7 +87,7 @@ of GraalVM with Java 11 support and the [native-image](https://www.graalvm.org/d
 
 ```
 mvn package
-native-image -jar target/jgrapht-sparsegraph-example-1.4.0-SNAPSHOT.jar
+native-image -jar target/jgrapht-sparsegraph-example-1.4.0.jar
 ```
 
 An executable called `sparsegraph` will be created. The configuration for the native-tool is automatically 

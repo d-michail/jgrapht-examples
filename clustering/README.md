@@ -10,7 +10,7 @@ The project can be executed like:
 
 ```
 mvn package
-java -jar target/jgrapht-clustering-example-1.4.0-SNAPSHOT.jar
+java -jar target/jgrapht-clustering-example-1.4.0.jar
 ```
 
 ## Going Native 
@@ -21,7 +21,7 @@ of GraalVM with Java 11 support and the [native-image](https://www.graalvm.org/d
 
 ```
 mvn package
-native-image -jar target/jgrapht-clustering-example-1.4.0-SNAPSHOT.jar
+native-image -jar target/jgrapht-clustering-example-1.4.0.jar
 ```
 
 An executable called `clustering` will be created. The configuration for the native-tool is automatically 
